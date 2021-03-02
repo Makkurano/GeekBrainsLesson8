@@ -7,7 +7,7 @@ public class Wall implements Obstacle {
 
     @Override
     public void jump(String personType, String name,int h) {
-        if (h <= height) {
+        if (height <= h) {
             System.out.println(personType + " " + name + " успешно преодолел препятствие");
         } else {
             System.out.println(personType + " " + name + " не смог преодолеть препятствие");

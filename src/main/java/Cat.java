@@ -14,11 +14,11 @@ public class Cat implements Actions {
     }
     @Override
     public void run(int r) {
-        System.out.println(personType+ " " + name + " Побежал");
+        System.out.println(personType + " " + name + " Побежал");
     }
     @Override
     public void jump(int j) {
-        System.out.println(personType+ " " + name + " Поскакал");
+        System.out.println(personType + " " + name + " Поскакал");
     }
 
     @Override

@@ -18,10 +18,13 @@ public class Main {
             obstacles[1] = wall;
         }
 
-        participants[0].run(20);
-        participants[1].jump(50);
-        obstacles[1].jump(cat.getPersonType(), cat.getName(), cat.getJumpDistance());
+        obstacles[0].run(participants[0].getPersonType(), participants[0].getName(), participants[0].getRunDistance());
+        for (int j = 0; j < participants.length; j++) {
+            for (int i = 0; i < obstacles.length; i++) {
+                obstacles[i].jump(participants[j].getPersonType(), participants[j].getName(), participants[j].getJumpDistance());
+                obstacles[i].run(participants[j].getPersonType(), participants[j].getName(), participants[j].getRunDistance());
+            }
+        }
     }
-
 }
 
