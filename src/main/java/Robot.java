@@ -13,26 +13,32 @@ public class Robot implements Actions {
 
     }
 
+    @Override
     public void run(int r) {
-        System.out.println(personType+ " " + name + "Побежал");
+        System.out.println(personType+ " " + name + " Побежал");
     }
+    @Override
     public void jump(int j) {
-        System.out.println(personType+ " " + name + "Поскакал");
+        System.out.println(personType+ " " + name + " Поскакал");
     }
 
-    public int getJumpDistance() {
-        return jumpDistance;
-    }
-
-    public int getRunDistance() {
-        return runDistance;
-    }
-
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public String getPersonType() {
         return personType;
+    }
+
+    @Override
+    public int getRunDistance() {
+        return runDistance;
+    }
+
+    @Override
+    public int getJumpDistance() {
+        return jumpDistance;
     }
 }
